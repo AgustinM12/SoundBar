@@ -1,4 +1,4 @@
-import { AudioPlayer } from "../components/LoadAudio"
+import { LoadAudio } from "../components/LoadAudio"
 import { AudioList } from "../components/AudioList"
 import { useFetch } from "../hooks/useFetch"
 import { AudioDownloader } from "../components/AudioDownloader"
@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div>
       <h2>Reproductor de MP3</h2>
-      <AudioPlayer />
+      <LoadAudio />
       <AudioList list={data}/>
       <AudioDownloader refetch={refetch}/>
     </div>

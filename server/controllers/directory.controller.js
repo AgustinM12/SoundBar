@@ -10,11 +10,23 @@ const audioPath = path.join(__dirname, "../public/audios");
 
 export async function readDirectory(req, res) {
     try {
-
         const files = await fs.readdir(audioPath);
         const mp3Files = files.filter(file => file.endsWith('.mp3'));
         return res.status(200).json(mp3Files);
     } catch (error) {
-        console.error("Error al leer los archivos del directorio", error);
+        console.log("Error al leer los archivos del directorio", error);
+    }
+}
+
+export async function ctrlEditFileName(req, res) {
+    try {
+        const { newName, oldName } = req.body;
+
+        
+        
+
+
+    } catch (error) {
+        console.log("Error al leer los archivos del directorio", error);
     }
 }

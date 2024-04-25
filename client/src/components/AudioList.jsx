@@ -13,7 +13,7 @@ export const AudioList = ({ list }) => {
                     list.map((audio, index) => {
                         return (
                             <li key={index}>
-                                <a href={publicRoute + audio} target="_blank">{audio}</a >
+                                <a href={publicRoute + audio} target="_blank">{audio.slice(0, audio.length-4)}</a >
                             </li>
                         )
                     })

@@ -1,6 +1,6 @@
 import { useAudioUploader } from "../hooks/useAudioUpload.js"
 
-export const AudioPlayer = () => {
+export const LoadAudio = () => {
     
     const { audioFile, uploadAudio } = useAudioUploader();
 
