@@ -25,11 +25,11 @@ export const AudioDownloader = ({ refetch }) => {
 
     return (
         <>
-            <h2>AudioDownloader</h2>
+            <h2 className="font-bold text-slate-200 underline">Descargar Audios de YT</h2>
 
-            <form onSubmit={handleSubmit}>
-                <input type="text" onChange={onChange} value={value} />
-                <button type="submit">Descargar</button>
+            <form onSubmit={handleSubmit} className="space-x-2">
+                <input type="text" onChange={onChange} value={value} className="rounded shadow-xl"/>
+                <button type="submit" className="p-1 bg-fuchsia-600 rounded-md shadow-xl">Descargar</button>
             </form>
         </>
     )

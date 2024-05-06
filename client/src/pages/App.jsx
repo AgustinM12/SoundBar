@@ -8,11 +8,11 @@ const App = () => {
   const { data, refetch } = useFetch("/readDirectory", "GET")
 
   return (
-    <div>
-      <h2>Reproductor de MP3</h2>
+    <div className="p-5 rounded-xl overflow-hidden bg-slate-600 border-2 border-red-800 shadow-lg w-fit h-fit">
+      <h1 className="font-bold text-center text-slate-200">SoundBar</h1>
       <LoadAudio />
-      <AudioList list={data}/>
-      <AudioDownloader refetch={refetch}/>
+      <AudioList list={data} />
+      <AudioDownloader refetch={refetch} />
     </div>
   )
 }
