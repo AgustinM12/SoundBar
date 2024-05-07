@@ -8,13 +8,7 @@ export const LoadAudio = () => {
 
         <div>
             <h2 className="font-bold text-slate-200 underline">Cargar Audios</h2>
-            <input type="file" onChange={uploadAudio} accept=".mp3" className="rounded-xl hover:text-fuchsia-500 animate-pulse"/>
-
-            {audioFile && (
-                <audio controls>
-                    <source src={audioFile} type="audio/mp3" />
-                </audio>
-            )}
+            <input type="file" onChange={uploadAudio} accept=".mp3" className="rounded-xl animate-pulse hover:text-fuchsia-500 hover:animate-none hover:cursor-pointer"/>
         </div>
     )
 }

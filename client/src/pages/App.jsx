@@ -2,6 +2,7 @@ import { LoadAudio } from "../components/LoadAudio"
 import { AudioList } from "../components/AudioList"
 import { useFetch } from "../hooks/useFetch"
 import { AudioDownloader } from "../components/AudioDownloader"
+import { AudioPlayer } from "../components/AudioPlayer"
 
 const App = () => {
 

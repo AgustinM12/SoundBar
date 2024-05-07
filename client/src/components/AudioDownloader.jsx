@@ -29,7 +29,7 @@ export const AudioDownloader = ({ refetch }) => {
 
             <form onSubmit={handleSubmit} className="space-x-2">
                 <input type="text" onChange={onChange} value={value} className="rounded shadow-xl"/>
-                <button type="submit" className="p-1 bg-fuchsia-600 rounded-md shadow-xl">Descargar</button>
+                <button type="submit" className="font-semibold p-1 bg-fuchsia-600 rounded-md shadow-xl hover:bg-fuchsia-800 text-white hover:scale-105 transition-transform duration-300 border-2 border-white">Descargar</button>
             </form>
         </>
     )
