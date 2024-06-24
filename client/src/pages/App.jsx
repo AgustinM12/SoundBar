@@ -3,6 +3,7 @@ import { AudioList } from "../components/AudioList"
 import { useFetch } from "../hooks/useFetch"
 import { AudioDownloader } from "../components/AudioDownloader"
 import { AudioPlayer } from "../components/AudioPlayer"
+import { AudioCircle } from "../components/AudioCircle"
 
 const App = () => {
 
@@ -14,6 +15,7 @@ const App = () => {
       <LoadAudio />
       <AudioList list={data} />
       <AudioDownloader refetch={refetch} />
+      <AudioCircle />
     </div>
   )
 }
