@@ -41,7 +41,13 @@ export const AudioCircle = () => {
 
     return (
         <div>
-            {isVisible && <div className='text-red-500'>Componente visible</div>}
+            {isVisible &&
+                <div className='text-red-500'>
+                    Componente visible
+                </div>
+            }
+
+
             <div>Presiona W + A simultáneamente para mostrar el componente</div>
 
             <div className='flex flex-col space-y-3 w-fit'>
